@@ -5,7 +5,9 @@ import (
 	"strconv"
 )
 
-func ConvertingToInt(slice []string) []float64 {
+// This function in converting the data passed from the file , it was in format string
+// it converted to float64 to calculate also the cases of .
+func ConvertingToFLoat(slice []string) []float64 {
 	result := []float64{}
 	for i := 0; i < len(slice); i++ {
 		holder, err := strconv.ParseFloat(slice[i], 64)

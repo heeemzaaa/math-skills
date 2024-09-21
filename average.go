@@ -2,6 +2,8 @@ package ms
 
 import "math"
 
+// This function return the average of the data
+// The average is the sum of all the numbers there divided by the number of them (length)
 func Average(data []float64) int {
 	var sum float64
 	length := len(data)

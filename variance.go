@@ -2,6 +2,13 @@ package ms
 
 import "math"
 
+// This function calculates the variance
+// To calculate the variance we have to get through some operations
+// First of all we calculate the average
+// Then we substract the average from each number in the data
+// After that we get the squared of each number of the data
+// Then we sum all the squared number in the data
+// Finally we divide the result by the length of the data
 func Variance(data []float64) int {
 	var mean float64
 	var variance float64

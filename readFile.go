@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-//this function read the givven file and return every number in a string inside a slice of strings
+// This function read the givven file and return every number in a string inside a slice of strings
 func ReadFile(s string) []string {
 	file, err := os.ReadFile(s)
 	if err != nil {

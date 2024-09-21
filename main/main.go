@@ -17,7 +17,7 @@ func main() {
 		log.Println("Error reading data !")
 		return
 	}
-	splitted_data := ms.ConvertingToInt(data)
+	splitted_data := ms.ConvertingToFLoat(data)
 	average := ms.Average(splitted_data)
 	median := ms.Median(splitted_data)
 	variance := ms.Variance(splitted_data)

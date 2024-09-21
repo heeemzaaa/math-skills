@@ -3,6 +3,7 @@ package ms
 import "math"
 
 //this function is for sorting the data's file in ascending order
+// I used the bublle sorting
 func SortData(data []float64) []float64 {
 	for i := 0; i < len(data); i++ {
 		for j := 0; j < len(data)-1-i; j++ {
@@ -14,7 +15,8 @@ func SortData(data []float64) []float64 {
 	return data
 }
 
-//this function finds the midean number in the data file
+// This function finds the midean number in the data file
+// The median number is the middle number in the data after we sorted it
 func Median(data []float64) int {
 	sortedData := SortData(data)
 	var median float64
