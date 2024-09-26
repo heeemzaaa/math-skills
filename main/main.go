@@ -22,11 +22,9 @@ func main() {
 	median := ms.Median(splitted_data)
 	variance := ms.Variance(splitted_data)
 	deviation := ms.Standard_Deviation(float64(variance))
-	fmt.Println(variance)
-	fmt.Println(float64(variance))
 
 	fmt.Printf("Average: %.0f\n", average)
-	fmt.Printf("Median: %d\n", median)
-	fmt.Printf("Variance: %d\n", variance)
-	fmt.Printf("Standard Deviation: %d\n", deviation)
+	fmt.Printf("Median: %.0f\n", median)
+	fmt.Printf("Variance: %.0f\n", variance)
+	fmt.Printf("Standard Deviation: %.0f\n", deviation)
 }

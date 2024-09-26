@@ -17,7 +17,7 @@ func SortData(data []float64) []float64 {
 
 // This function finds the midean number in the data file
 // The median number is the middle number in the data after we sorted it
-func Median(data []float64) int {
+func Median(data []float64) float64 {
 	sortedData := SortData(data)
 	var median float64
 	if len(sortedData)%2 != 0 {
@@ -25,5 +25,5 @@ func Median(data []float64) int {
 	} else {
 		median = (sortedData[(len(sortedData)/2)-1] + sortedData[(len(sortedData)/2)]) / 2
 	}
-	return int(math.Round(median))
+	return float64(int(math.Round(median)))
 }

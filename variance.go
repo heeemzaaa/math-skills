@@ -9,7 +9,7 @@ import "math"
 // After that we get the squared of each number of the data
 // Then we sum all the squared number in the data
 // Finally we divide the result by the length of the data
-func Variance(data []float64) int {
+func Variance(data []float64) float64 {
 	var mean float64
 	var variance float64
 	length := len(data)
@@ -30,5 +30,5 @@ func Variance(data []float64) int {
 		sum += data[i]
 	}
 	variance = sum / float64(length)
-	return int(math.Round(variance))
+	return float64(int(math.Round(variance)))
 }
