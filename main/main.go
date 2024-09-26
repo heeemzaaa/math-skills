@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
-	"ms"
 	"os"
+
+	"ms"
 )
 
 func main() {
@@ -21,7 +22,7 @@ func main() {
 	average := ms.Average(splitted_data)
 	median := ms.Median(splitted_data)
 	variance := ms.Variance(splitted_data)
-	deviation := ms.Standard_Deviation(float64(variance))
+	deviation := ms.Standard_Deviation(variance)
 
 	fmt.Printf("Average: %.0f\n", average)
 	fmt.Printf("Median: %.0f\n", median)

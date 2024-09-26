@@ -1,7 +1,5 @@
 package ms
 
-import "math"
-
 // This function calculates the variance
 // To calculate the variance we have to get through some operations
 // First of all we calculate the average
@@ -30,5 +28,5 @@ func Variance(data []float64) float64 {
 		sum += data[i]
 	}
 	variance = sum / float64(length)
-	return float64(int(math.Round(variance)))
+	return variance
 }

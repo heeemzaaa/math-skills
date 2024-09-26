@@ -17,7 +17,6 @@ func ConvertingToFLoat(slice []string) []float64 {
 		}
 		result = append(result, holder)
 		holder = 0
-
 	}
 	return result
 }

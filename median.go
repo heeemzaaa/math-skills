@@ -1,8 +1,6 @@
 package ms
 
-import "math"
-
-//this function is for sorting the data's file in ascending order
+// this function is for sorting the data's file in ascending order
 // I used the bublle sorting
 func SortData(data []float64) []float64 {
 	for i := 0; i < len(data); i++ {
@@ -25,5 +23,5 @@ func Median(data []float64) float64 {
 	} else {
 		median = (sortedData[(len(sortedData)/2)-1] + sortedData[(len(sortedData)/2)]) / 2
 	}
-	return float64(int(math.Round(median)))
+	return median
 }

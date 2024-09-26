@@ -8,5 +8,5 @@ import (
 // The SD is the square root of the variance
 func Standard_Deviation(variance float64) float64 {
 	deviation := math.Sqrt(variance)
-	return float64(int(math.Round(deviation)))
+	return deviation
 }
