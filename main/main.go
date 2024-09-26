@@ -25,7 +25,7 @@ func main() {
 	fmt.Println(variance)
 	fmt.Println(float64(variance))
 
-	fmt.Printf("Average: %d\n", average)
+	fmt.Printf("Average: %.0f\n", average)
 	fmt.Printf("Median: %d\n", median)
 	fmt.Printf("Variance: %d\n", variance)
 	fmt.Printf("Standard Deviation: %d\n", deviation)
